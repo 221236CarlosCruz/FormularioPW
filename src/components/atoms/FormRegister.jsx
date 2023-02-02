@@ -1,7 +1,7 @@
 /* import { Link } from "react-router-dom"; */
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import '../../assets/styles/FormRegister.css'
+import '../../assets/styles/Styles.css'
 import Logo from "../../assets/img/buss.png"
 
 function FormRegister() {

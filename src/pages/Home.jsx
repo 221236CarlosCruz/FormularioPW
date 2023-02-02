@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import LoginS from "../components/atoms/LoginS";
+import LoginS from "../components/atoms/FormularioLogin";
 
 function Home(){
     return(

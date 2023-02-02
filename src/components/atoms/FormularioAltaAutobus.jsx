@@ -2,7 +2,7 @@ import { useRef } from "react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/img/buss.png";
-import '../../assets/styles/FormAlta.css'
+import '../../assets/styles/Styles.css'
 
   function Alta() {
     const [selectedOption, setSelectedOption] = useState("Turismo");
@@ -46,7 +46,7 @@ import '../../assets/styles/FormAlta.css'
     <div className='form-body'>
     <img src={Logo} alt="" />
 
-    <form className='login-form'>
+    <form className='login-form' ref={formDataF}>
 
     <input type="text" id="clave" name="clave" className="inp" placeholder="CLAVE AUTOBUS" />{" "}
     <input type="text" id="placa" name="placa" className="inp" placeholder="PLACA AUTOBUS"/>{" "}
@@ -57,7 +57,7 @@ import '../../assets/styles/FormAlta.css'
                 <option value="Lujo">Lujo</option>
     </select>
     <input type="text" id="chofer" name="chofer" placeholder="NOMBRE DEL CHOFER"/>
-    <input name="licencia" value={license} disabled placeholder="NUMERO DE LICENCIA"></input>
+    <input name="licencia" value={license} disabled></input>
 
     <button onClick={handlerClick}>ALTA AUTOBUS</button>
 

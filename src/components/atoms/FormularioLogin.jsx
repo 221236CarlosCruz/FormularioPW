@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import { Link } from "react-router-dom";
 import Logo from "../../assets/img/buss.png"
-import '../../assets/styles/Login.css'
+import '../../assets/styles/Styles.css'
 
 function LoginS() {
     const [stateForm,setStateForm]=useState('')
@@ -26,6 +26,7 @@ function LoginS() {
         <input type="password" value={stateForm.password} onChange={handlerChangePassword} placeholder="CONTRASEÑA" />
         <button onClick={handlerClick}>Iniciar Sesion</button>
         <Link to="/Register"> <button>Registrarme</button></Link>
+        <Link to="/AltaBuss"> <button>Alta de autobus</button></Link>
         <label>{JSON.stringify(stateForm)}</label>
         </form>
       </div>

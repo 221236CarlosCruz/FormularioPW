@@ -1,9 +1,9 @@
-import LoginS from "../components/atoms/LoginS";
+import FormularioLogin from "../components/atoms/FormularioLogin";
 
 function Login() {
     return ( 
         <>
-        <LoginS></LoginS>
+        <FormularioLogin/>
         </>
      );
 }
