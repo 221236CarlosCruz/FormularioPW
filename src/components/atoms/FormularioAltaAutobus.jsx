@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/img/buss.png";
 import '../../assets/styles/Styles.css'
 
-  function Alta() {
+  function FormularioAltaAutobus() {
     const [selectedOption, setSelectedOption] = useState("Turismo");
     const [license, setLicense] = useState(Math.floor(Math.random() * 100000));
   function handleChange(event) {
@@ -48,8 +48,8 @@ import '../../assets/styles/Styles.css'
 
     <form className='login-form' ref={formDataF}>
 
-    <input type="text" id="clave" name="clave" className="inp" placeholder="CLAVE AUTOBUS" />{" "}
-    <input type="text" id="placa" name="placa" className="inp" placeholder="PLACA AUTOBUS"/>{" "}
+    <input type="text" id="clave" name="clave" placeholder="CLAVE AUTOBUS" />{" "}
+    <input type="text" id="placa" name="placa" placeholder="PLACA AUTOBUS"/>{" "}
     <input type="number" id="asientos" name="asientos" placeholder="NUMERO DE ASIENTOS"/>
     <input type="Date" id="fecha" name="fecha" placeholder="FECHA DE ALTA"/>
     <select value={selectedOption} onChange={handleChange} id="tipo" name="tipo">
@@ -67,4 +67,4 @@ import '../../assets/styles/Styles.css'
   );
 }
 
-export default Alta;
+export default FormularioAltaAutobus;
